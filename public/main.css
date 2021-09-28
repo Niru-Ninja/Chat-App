@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap");
+
+/* 
+    Chosen color palette:
+    Background: #202021
+    Lighter Background: #333444
+    Buttons Background: #718af4
+    Regular Text: #f8f8ff
+    Highlight Text: #5cecc0
+*/
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  color: #f8f8ff;
+  background-color: #202021;
+  font-family: "Ubuntu Condensed", sans-serif;
+}
+
+h2 {
+  text-align: center;
+}
+
+strong {
+  color: #5cecc0;
+}
+
+input {
+  font-family: "Ubuntu Condensed", sans-serif;
+  display: block;
+  width: 100%;
+  border: 0;
+  margin-bottom: 5px;
+  padding: 10px;
+  color: #f8f8ff;
+  background: #202021;
+  font-size: 1.125rem;
+  border-radius: 10px 10px 0px 0px;
+}
+
+button {
+  font-family: "Ubuntu Condensed", sans-serif;
+  display: block;
+  width: 100%;
+  border: 0;
+  margin-bottom: 5px;
+  font-weight: bold;
+  padding: 10px 0px;
+  color: #f8f8ff;
+  background-color: #718af4;
+  font-size: 1.5rem;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.window {
+  margin: 0px 20px;
+  background-color: #333444;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+/***** INDEX IDs *****/
+#unameBox {
+  width: 60%;
+  padding: 20px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#uname {
+  text-align: center;
+}
+/***** CHATROOM IDs *****/
+#chatInteraction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  height: 90%;
+}
+
+#chatInputBox {
+  display: block;
+  margin: auto;
+  flex-shrink: 0;
+  width: 98%;
+  align-self: bottom;
+}
+
+#chatOutputBox {
+  flex: 1 1 auto;
+  max-height: 75vh;
+  padding: 0px 20px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+#userList {
+  padding: 0px 20px;
+  max-height: 75vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+#container {
+  margin: auto;
+  display: grid;
+  height: 95vh;
+  max-height: 95vh;
+  grid-template-columns: 66% 33%;
+}
